@@ -1,0 +1,6 @@
+{
+  "name": "Calculadora de Investimentos",
+  "description": "Calculadora de Investimentos Inteligente com juros compostos, CDI, CDB, Tesouro Direto e planejamento de metas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
