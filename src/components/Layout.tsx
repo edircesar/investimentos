@@ -40,7 +40,7 @@ export function Layout({ children, activeTab, onTabChange }: LayoutProps) {
       <div className="md:hidden flex items-center justify-between p-4 bg-purple-900 text-white shadow-md z-20 relative">
         <div className="flex items-center gap-2 font-bold text-xl tracking-tight">
           <TrendingUp className="text-purple-300" />
-          <span>InvestMente</span>
+          <span>InvestirAgora</span>
         </div>
         <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
           {isMobileMenuOpen ? <X /> : <Menu />}
@@ -54,7 +54,7 @@ export function Layout({ children, activeTab, onTabChange }: LayoutProps) {
       )}>
         <div className="hidden md:flex items-center gap-2 p-6 border-b border-gray-100 font-bold text-2xl text-purple-900 tracking-tight">
           <TrendingUp className="text-purple-600" />
-          <span>InvestMente</span>
+          <span>InvestirAgora</span>
         </div>
         
         <nav className="flex-1 py-4 overflow-y-auto">

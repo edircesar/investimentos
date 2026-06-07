@@ -24,7 +24,7 @@ export function Dashboard({ summary, title = "Resultados da Simulação" }: Dash
     const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
     
     pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-    pdf.save('simulacao-investmente.pdf');
+    pdf.save('simulacao-investiragora.pdf');
   };
 
   const exportCSV = () => {
@@ -41,7 +41,7 @@ export function Dashboard({ summary, title = "Resultados da Simulação" }: Dash
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.setAttribute("href", url);
-    link.setAttribute("download", "simulacao-investmente.csv");
+    link.setAttribute("download", "simulacao-investiragora.csv");
     document.body.appendChild(link);
     link.click();
     link.remove();

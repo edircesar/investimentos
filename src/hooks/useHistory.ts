@@ -5,7 +5,7 @@ export function useHistory() {
   const [history, setHistory] = useState<HistoryEntry[]>([]);
 
   useEffect(() => {
-    const saved = localStorage.getItem('@investmente:history');
+    const saved = localStorage.getItem('@investiragora:history');
     if (saved) {
       try {
         setHistory(JSON.parse(saved));
@@ -23,18 +23,18 @@ export function useHistory() {
     };
     const newHistory = [newEntry, ...history].slice(0, 50); // Keep last 50
     setHistory(newHistory);
-    localStorage.setItem('@investmente:history', JSON.stringify(newHistory));
+    localStorage.setItem('@investiragora:history', JSON.stringify(newHistory));
   };
 
   const removeEntry = (id: string) => {
     const newHistory = history.filter(h => h.id !== id);
     setHistory(newHistory);
-    localStorage.setItem('@investmente:history', JSON.stringify(newHistory));
+    localStorage.setItem('@investiragora:history', JSON.stringify(newHistory));
   };
 
   const clearHistory = () => {
     setHistory([]);
-    localStorage.removeItem('@investmente:history');
+    localStorage.removeItem('@investiragora:history');
   };
 
   return { history, addEntry, removeEntry, clearHistory };

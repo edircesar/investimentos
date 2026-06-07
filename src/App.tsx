@@ -32,7 +32,7 @@ export default function App() {
   return (
     <Layout activeTab={activeTab} onTabChange={setActiveTab}>
       <div className="mb-6">
-        <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">InvestMente</h1>
+        <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">InvestirAgora</h1>
         <p className="mt-2 text-lg text-gray-600">Sua plataforma inteligente para projeções financeiras e enriquecimento.</p>
       </div>
       {renderContent()}
